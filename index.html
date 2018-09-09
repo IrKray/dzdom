@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href=”index.css” rel=”stylesheet” type=”text/css”>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form name="sci-calc">
+<input name="display" value="0">
+<div>
+<input type="button" value=" 7 " onclick="addChar(this.form.display, '7')">
+<input type="button" value=" 8 " onclick="addChar(this.form.display, '8')">
+<input type="button" value=" 9 " onclick="addChar(this.form.display, '9')">
+<input type="button" value=" / " onclick="addChar(this.form.display, '/')">
+<input type="button" value="c" onclick="this.form.display.value = 0 ">
+</div>
+
+<div>
+<input type="button" value=" 4 " onclick="addChar(this.form.display, '4')">
+<input type="button" value=" 5 " onclick="addChar(this.form.display, '5')">
+<input type="button" value=" 6 " onclick="addChar(this.form.display, '6')">
+<input type="button" value=" * " onclick="addChar(this.form.display, '*')">
+<input type="button" value="<" onclick="deleteChar(this.form.display)">
+</div>
+
+<div>
+<input type="button" value=" 1 " onclick="addChar(this.form.display, '1')">
+<input type="button" value=" 2 " onclick="addChar(this.form.display, '2')">
+<input type="button" value=" 3 " onclick="addChar(this.form.display, '3')">
+<input type="button" value=" - " onclick="addChar(this.form.display, '-')">
+<input type="button" value=" . " onclick="addChar(this.form.display, '.')">
+</div>
+
+<div>
+<input type="button" value=" ( " onclick="addChar(this.form.display, '(')">
+<input type="button" value=" ) " onclick="addChar(this.form.display, ')')">
+<input type="button" value=" 0 " onclick="addChar(this.form.display, '0')">
+<input type="button" value=" + " onclick="addChar(this.form.display, '+')">
+<input type="button" value="=" name="enter" onclick="if (checkNum(this.form.display.value)) { compute(this.form) }">
+
+</div>
+
+</form>
+
+<script src="js/calc.js"></script>
+    
+     <!-- onLoad="checkBrowser()">
+<form id="calcForm">
+
+<div id="calc">
+<input type='hidden' id='param1' value='0' />
+<input type='hidden' id='operator' value='' />
+    <div id="display">
+        <input type="text" name="disp" id="disp" class="disp" size="36" value="0">
+    </div>
+    <div id="buttons">
+        <div class="row">
+            <input type="button" value="7" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="8" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="9" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="/" onClick="isNum();setOp(this.value)">
+            <input type="button" value="CE">
+        </div>
+        <div class="row">
+            <input type="button" value="4" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="5" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="6" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="*" onClick="isNum();setOp(this.value)">
+            <input type="button" value="C" onclick="clearAll()">
+        </div>
+        <div class="row">
+            <input type="button" value="1" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="2" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="3" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="-" onClick="isNum();setOp(this.value)">
+            <input type="button" value="M" onClick="isNum();set_getMem()">
+        </div>
+        <div class="row">
+            <input type="button" value="0" onclick="isNum();appendMe(this.value)">
+            <input type="button" value="+/-" onclick="isNum();plusMinus()">
+            <input type="button" value="." onclick="isNum();appendMe(this.value)">
+            <input type="button" value="+" onClick="isNum();setOp(this.value)">
+            <input type="button" value="=" onClick="isNum();calcMe()">
+        </div>
+        </div>      
+<div id='warning'>Your Browser Can't Handle The Truth!</div> 
+</div>
+</form>
+
+<script src="js/calc2.js"></script>
+
+
+   
+   
+   
+
+function count(num1, num2, mark) {
+  switch (mark) {
+    case "*":
+      return num1 * num2;
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "/":
+      if (num2 !== 0) {
+        return num1 / num2;
+      } else {
+        return "не делится на нуль";
+      }
+  }
+}-->
+</body>
+</html>
